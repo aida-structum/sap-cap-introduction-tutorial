@@ -20,7 +20,7 @@ class CatalogService extends cds.ApplicationService{
         const dead = new Date(dateOfDeath);
 
         if(dead< birth){
-            req.error(`The date of death (${dateOfDeath}) is before the date of birth (${dateOfBirth}).`)
+            req.error('DEATH_BEFORE_BIRTH', [dateOfDeath, dateOfBirth])
         }
     }
 
