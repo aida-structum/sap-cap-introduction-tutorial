@@ -23,4 +23,8 @@ service CatService @(path:'/cat'){
         author
     };
 
+    action submitOrder(book: my.Books:ID, quantity: Integer) returns{
+        stock: my.Books:stock
+    };
+
 }
