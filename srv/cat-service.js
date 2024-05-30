@@ -1,6 +1,6 @@
 const cds =require('@sap/cds')
 
-class CatalogService extends cds.ApplicationService{
+class CatService extends cds.ApplicationService{
 
     init()
     {
@@ -48,4 +48,4 @@ class CatalogService extends cds.ApplicationService{
      }
 }
 
-module.exports = CatalogService;
+module.exports = CatService;

@@ -21,6 +21,20 @@
     "db": {
        "kind": "sqlite",
        "credentials": { "url": "db/my-bookshop.sqlite" }
+    },
+    "auth": {
+      "kind": "mocked",
+      "users": {
+        "adminuser": {
+          "password": "abcd1234",
+          "roles": [
+            "admin"
+          ]
+        },
+        "catuser": {
+          "password": "abcd1234"
+        }
+      }
     }
  }}
 }
